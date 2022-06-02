@@ -82,7 +82,7 @@ class MainPageController extends ChangeNotifier {
 
   Future<void> fetch() async {
     locations = await AsyncValue.guard(() async {
-      final res = await get(Uri.parse("https://guideblag.arslee.me/data.json"));
+      final res = await get(Uri.parse("https://raw.githubusercontent.com/arslee07/guideblag/master/data.json"));
       return [for (final e in jsonDecode(res.body)) Location.fromJson(e)];
     });
     notifyListeners();
