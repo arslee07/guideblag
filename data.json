@@ -97,5 +97,13 @@
       127.52525459930311
     ],
     "image": "https://i.imgur.com/v6iib0M.jpg"
+  },
+  {
+    "title": "Болото",
+    "description": "Музей",
+    "point": [
+      50.28256629347388, 127.47293628182321
+    ],
+    "image": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png"
   }
 ]
