@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:http/http.dart';
@@ -39,7 +38,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'GuideBlag',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
@@ -157,9 +156,13 @@ class LocationViewPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                     child: ConstrainedBox(
                       constraints: const BoxConstraints(maxHeight: 400),
-                      child: Image.network(
-                        location.image.toString(),
-                        fit: BoxFit.cover,
+                      child: Container(
+                        height: double.infinity,
+                        color: Colors.black12,
+                        child: Image.network(
+                          location.image.toString(),
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
